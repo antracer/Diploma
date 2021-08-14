@@ -1,0 +1,99 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #93d448;
+}
+
+div:not(.preload-inner, .preloader, .main-link) {
+    position: relative;
+    border: 1px solid #424242;
+    border-bottom: none;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+    height: 50%;
+    width: 100%;
+}
+
+.MCI {
+    opacity: 0;
+}
+
+iframe {
+    margin-top: 15px;
+    width: 100%;
+    height: 90%;
+}
+
+.main-link {
+    display: inline-block;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    top: 47.5%;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2.5rem;
+}
+
+a {
+    text-decoration: none;
+    background-image: -webkit-gradient(linear, left top, right top, from(white), to(#2063e3)), -webkit-gradient(linear, left top, right top, from(#c94db4), to(#0f207a));
+    background-image: -o-linear-gradient(left, white, #2063e3), -o-linear-gradient(left, #c94db4, #0f207a);
+    background-image: linear-gradient(to right, white, #2063e3), linear-gradient(to right, #c94db4, #0f207a);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 0 2px, 6rem 2px;
+    color: white;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    font-family: 'Nunito', sans-serif;
+}
+
+a:hover {
+    background-size: 6rem 2px, 0 2px;
+    color: white;
+}
+
+.ln,
+.ac,
+.ma {
+    border-bottom: 1px solid #424242;
+}
+
+@media (max-width: 991px) {
+    .MCI {
+        height: 100%;
+    }
+
+    a {
+        font-size: 1.5rem;
+        background-size: 0 2px, 8.5rem 2px;
+    }
+
+    .main-link {
+        top: 46%;
+    }
+
+    a:hover {
+        background-size: 8.5rem 2px, 0 2px;
+    }
+}

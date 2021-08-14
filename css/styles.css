@@ -1,0 +1,203 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#cfecd0), color-stop(#a0cea7), to(#9ec0db));
+    background: -o-linear-gradient(left, #cfecd0, #a0cea7, #9ec0db);
+    background: linear-gradient(90deg, #cfecd0, #a0cea7, #9ec0db);
+}
+
+/* For Main Content-Intro */
+
+.MCI {
+    position: relative;
+    float: left;
+    width: 12.5%;
+    height: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    opacity: 0;
+    font-family: 'Monofett', cursive;
+    font-size: 15rem;
+}
+
+.main-letter {
+    z-index: 1;
+    color: #f6f5f5;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    position: absolute;
+    height: 100%;
+}
+
+img,
+.main-letter {
+    -webkit-filter: brightness(30%);
+            filter: brightness(30%);
+    -webkit-transition: -webkit-filter .5s;
+    transition: -webkit-filter .5s;
+    -o-transition: filter .5s;
+    transition: filter .5s;
+    transition: filter .5s, -webkit-filter .5s;
+}
+
+.main-letter {
+    -webkit-filter: brightness(80%);
+            filter: brightness(80%);
+}
+
+img:hover {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+}
+
+.main-letter:hover {
+    color: #d3e0ea;
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+}
+
+.main-letter:hover + img {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+}
+
+.active {
+    width: 100%;
+}
+
+.passive {
+    display: none;
+}
+
+.hidden {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    font-family: 'Mogra', cursive;
+    font-size: 2rem;
+    text-align: center;
+    opacity: 0;
+    -webkit-transition: opacity .2s;
+    -o-transition: opacity .2s;
+    transition: opacity .2s;
+}
+
+.hidden a {
+    color: white;
+}
+
+.MCI:hover .hidden {
+    opacity: 1;
+}
+
+.MCI:hover .main-letter {
+    opacity: 0;
+}
+
+.A1-hidden {
+    background-color: #ee82ee;
+}
+
+.N-hidden {
+    background-color: green;
+}
+
+.T-hidden {
+    background-color: black;
+}
+
+.R1-hidden {
+    background-color: blue;
+}
+
+.A2-hidden {
+    background-color: #30d5c8;
+}
+
+.C-hidden {
+    background-color: brown;
+}
+
+.E-hidden {
+    background-color: yellow;
+}
+
+.R2-hidden {
+    background-color: orange;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .MCI {
+        width: 25%;
+        height: 100%;
+        overflow: hidden;
+        font-size: 10rem;
+    }
+
+    .hidden {
+        opacity: 1;
+    }
+
+    .main-letter {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .MCI {
+        width: 50%;
+        height: 100%;
+        overflow: hidden;
+        font-size: 7rem;
+    }
+
+    .hidden {
+        opacity: 1;
+    }
+
+    .main-letter {
+        opacity: 0;
+    }
+
+}
+
+/* Fonts:
+    font-family: 'Akronim', cursive;
+    font-family: 'Mogra', cursive;
+    font-family: 'Monofett', cursive;
+*/
+/*
+  {
+    Сначала положение элемента относительно других: position, left/right/top/bottom, float, clear, z-index.
+    Затем размеры и отступы: width, height, margin, padding…
+    Рамка border, она частично относится к размерам.
+    Общее оформление содержимого: list-style-type, overflow…
+    Цветовое и стилевое оформление: background, color, font…
+  }
+*/

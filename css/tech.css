@@ -1,0 +1,146 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #006699;
+    color: #fafaff;
+}
+
+.main-link {
+    padding: 1rem;
+    width: 100%;
+    opacity: 0;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+
+.main-link a {
+    color: #fff;
+}
+
+.article {
+    width: 100%;
+    opacity: 0;
+    height: 33.3%;
+    padding: 1rem 5rem;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+img,
+.honor,
+.battery {
+    display: block;
+    float: left;
+    width: 15rem;
+    height: 10rem;
+    margin-right: 2rem;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+}
+
+time {
+    display: block;
+    margin-bottom: .5rem;
+    color: #fff;
+    opacity: .7;
+    font-family: 'Arial', sans-serif;
+    font-size: .8rem;
+}
+
+p {
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis;
+}
+
+.hidden {
+    display: none;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.img-hidden {
+    display: block;
+    float: none;
+    width: 669px;
+    height: 376px;
+    margin: auto auto 1rem;
+}
+
+.hidden p {
+    white-space: normal;
+    overflow: visible;
+    -o-text-overflow: clip;
+       text-overflow: clip;
+}
+
+iframe {
+    margin-bottom: 1rem;
+}
+
+ul,
+ol {
+    text-align: left;
+}
+
+.honor {
+    background-image: url(../img/honor.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.battery {
+    background-image: url(../img/заряд.jpg);
+    background-position: center top;
+    background-size: cover;
+}
+
+@media (max-width: 991px) {
+
+    h1 { 
+    white-space: nowrap;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+       text-overflow: ellipsis; 
+    }
+
+    .hidden h1 {
+         white-space: normal;
+    overflow: visible;
+    -o-text-overflow: clip;
+       text-overflow: clip;
+    }
+
+    img,
+.honor,
+.battery {
+    display: block;
+    float: left;
+    width: 30%;
+    height: 100%;
+    margin-right: 2rem;
+   -o-object-fit:cover;
+      object-fit:cover;
+}
+
+.img-hidden {
+    display: block;
+    float: none;
+    width: 100%;
+    margin: auto auto 1rem;
+   -o-object-fit:cover;
+      object-fit:cover;
+}
+
+iframe {
+    width:  100%;
+}
+}

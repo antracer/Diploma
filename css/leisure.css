@@ -1,0 +1,176 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+html,
+body {
+    background: #30d5c8;
+}
+
+.main-link {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 1rem 1rem 0;
+    text-align: center;
+    margin-bottom: 1rem;
+    z-index: 6;
+    opacity: 0;
+}
+
+.main-link a {
+    color: #fff;
+}
+
+.post-wrap {
+    max-width: 1300px;
+    margin: 1rem auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    opacity: 0;
+}
+
+.post-item {
+    padding: 10px;
+}
+
+.post-item-wrap {
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    max-height: 575px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 0;
+       object-position: 0 0;
+}
+
+.text-wrapper {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 86%;
+    padding: 20px;
+    background: #101828;
+    color: #FFF;
+    font-family: 'Nunito', sans-serif;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform .5s cubic-bezier(.33, .02, 0, .93);
+    transition: -webkit-transform .5s cubic-bezier(.33, .02, 0, .93);
+    -o-transition: transform .5s cubic-bezier(.33, .02, 0, .93);
+    transition: transform .5s cubic-bezier(.33, .02, 0, .93);
+    transition: transform .5s cubic-bezier(.33, .02, 0, .93), -webkit-transform .5s cubic-bezier(.33, .02, 0, .93);
+}
+
+.post-item:hover .text-wrapper {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform .5s cubic-bezier(.33, .02, 0, .93) .3s;
+    transition: -webkit-transform .5s cubic-bezier(.33, .02, 0, .93) .3s;
+    -o-transition: transform .5s cubic-bezier(.33, .02, 0, .93) .3s;
+    transition: transform .5s cubic-bezier(.33, .02, 0, .93) .3s;
+    transition: transform .5s cubic-bezier(.33, .02, 0, .93) .3s, -webkit-transform .5s cubic-bezier(.33, .02, 0, .93) .3s;
+}
+
+.post-cat {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.post-title {
+    font-size: 12px;
+    font-weight: 400;
+    color: #a5acbd;
+    font-style: italic;
+    margin-top: 1rem;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background: rgba(255, 79, 17, 0.6);
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    -webkit-transition: -webkit-transform .5s cubic-bezier(.33, .02, 0, .93) .2s;
+    transition: -webkit-transform .5s cubic-bezier(.33, .02, 0, .93) .2s;
+    -o-transition: transform .5s cubic-bezier(.33, .02, 0, .93) .2s;
+    transition: transform .5s cubic-bezier(.33, .02, 0, .93) .2s;
+    transition: transform .5s cubic-bezier(.33, .02, 0, .93) .2s, -webkit-transform .5s cubic-bezier(.33, .02, 0, .93) .2s;
+}
+
+.post-item:hover .overlay {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform .5s cubic-bezier(.33, .02, 0, .93);
+    transition: -webkit-transform .5s cubic-bezier(.33, .02, 0, .93);
+    -o-transition: transform .5s cubic-bezier(.33, .02, 0, .93);
+    transition: transform .5s cubic-bezier(.33, .02, 0, .93);
+    transition: transform .5s cubic-bezier(.33, .02, 0, .93), -webkit-transform .5s cubic-bezier(.33, .02, 0, .93);
+}
+
+
+[aria-current="page"] {
+    pointer-events: none;
+    cursor: default;
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width: 768px) and (max-width:  991px) {
+    .post-item {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+    }
+
+    .text-wrapper, .overlay {
+
+    -webkit-transform: translate3d(0, 0, 0);
+
+            transform: translate3d(0, 0, 0);
+    }
+}
+
+@media (max-width: 767px) {
+.text-wrapper, .overlay {
+
+    -webkit-transform: translate3d(0, 0, 0);
+
+            transform: translate3d(0, 0, 0);
+    }
+}
+
+@media (min-width: 992px) {
+    .post-item {
+        -ms-flex-preferred-size: 33.333333333%;
+            flex-basis: 33.333333333%;
+    }
+}

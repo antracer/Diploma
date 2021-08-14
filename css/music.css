@@ -1,0 +1,46 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    text-align: center;
+    background-color: #FE5568;
+}
+
+a {
+    display: inline-block;
+    padding: 0.3rem;
+    text-decoration: none;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#b721ff), color-stop(#2af598), color-stop(#fec051), color-stop(#fee140), to(#fa709a)), -webkit-gradient(linear, left top, right top, from(#c94db4), to(#0f207a));
+    background-image: -o-linear-gradient(top, #b721ff, #2af598, #fec051, #fee140, #fa709a), -o-linear-gradient(left, #c94db4, #0f207a);
+    background-image: linear-gradient(to bottom, #b721ff, #2af598, #fec051, #fee140, #fa709a), linear-gradient(to right, #c94db4, #0f207a);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 0 2px, 100% 2px;
+    color: white;
+    -webkit-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    font-family: 'Nunito', sans-serif;
+}
+
+a:hover {
+    background-size: 100% 2px, 0 2px;
+    color: white;
+}
+
+footer {
+    display: block;
+    padding: 2rem;
+}
+
+.MCI {
+    opacity: 0;
+}

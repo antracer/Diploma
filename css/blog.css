@@ -1,0 +1,127 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #424242;
+    font-family: 'Nunito', sans-serif;
+}
+
+/*Block and Articles */
+
+.row {
+    padding: 0;
+    margin: 0;
+    height: 50%;
+    width: 100%;
+}
+
+.article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 1px solid #c0c0c0;
+    position: relative;
+}
+
+.article span {
+    color: #fff;
+    -webkit-transition: opacity .1s ease-in-out;
+    -o-transition: opacity .1s ease-in-out;
+    transition: opacity .1s ease-in-out;
+}
+
+/*Link Section */
+
+.block-link {
+    height: 5%;
+}
+
+.link a,
+.main-link {
+    display: block;
+    padding: 1rem;
+    float: left;
+    width: 33.3%;
+    font-family: 'Mogra', cursive;
+    text-align: center;
+    text-decoration: none;
+    -webkit-filter: brightness(50%);
+            filter: brightness(50%);
+    color: white;
+    -webkit-transition: -webkit-filter .5s;
+    transition: -webkit-filter .5s;
+    -o-transition: filter .5s;
+    transition: filter .5s;
+    transition: filter .5s, -webkit-filter .5s;
+}
+
+.link {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+    color: white;
+}
+
+/* Extended */
+
+.extended {
+    display: none;
+    position: absolute;
+    left: 0;
+    overflow: auto;
+    text-align: center;
+    height: 100%;
+    padding: 2rem;
+    color: white;
+}
+
+.article:hover .extended {
+    display: block;
+}
+
+.article:hover span {
+    opacity: 0;
+}
+
+.extended a {
+    display: inline;
+    text-align: left;
+    text-decoration: none;
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+}
+
+@media (max-width: 991px) {
+
+    .extended {
+        display: block;
+    }
+
+    span {
+        opacity: 0;
+    }
+
+    .row {
+        height: 100%;
+    }
+
+}
